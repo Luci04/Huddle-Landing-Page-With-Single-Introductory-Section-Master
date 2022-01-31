@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./images//bg-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  color: white;
+  background-color: hsl(257, 40%, 49%);
+  display: flex;
+  font-size: 1.4rem;
+  align-items: center;
+  justify-content: center;
+  font-family: "Open sans";
+}
+
+h1 {
+  font-family: "Poppins";
+}
+
+p {
+  padding: 30px 0;
+  opacity: 0.8;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  margin: 50px;
+  max-width: 100%;
+}
+
+.flex {
+  display: flex;
+  margin: 25px 0;
+}
+
+.flex > div:first-child {
+  flex: 0.6;
+  margin-right: 20px;
+}
+
+.flex > div:last-child {
+  flex: 0.4;
+  margin-left: 20px;
+}
+
+button {
+  background-color: #fff;
+  border: none;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  color: hsl(257, 40%, 49%);
+  font-size: 24px;
+  padding: 18px 90px;
+}
+
+.social-links {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social-links a {
+  color: white;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  display: inline-flex;
+  margin-left: 20px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 1rem;
+  }
+
+  .flex {
+    margin: 50px 0;
+    flex-direction: column;
+  }
+
+  .flex > div:first-child {
+    flex: 1;
+    margin-right: 20px;
+  }
+
+  .flex > div:last-child {
+    flex: 1;
+    margin-left: 20px;
+    text-align: center;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+}
